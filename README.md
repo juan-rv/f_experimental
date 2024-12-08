@@ -31,7 +31,7 @@ Este consiste en el entendimiento de la relación potencial y como desarrollarla
 - **Python 3.6 o superior**.
 - **Biblioteca NumPy, matplotlib y pandas.**
   ```bash
-  pip install numpy matplotlib pandas
+  pip3 install numpy matplotlib pandas
 
 - **Ejecutar (ejemplo).**
 
