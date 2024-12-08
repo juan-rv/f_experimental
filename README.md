@@ -1,18 +1,39 @@
-Hola, acá se encuentra suministrado el código asociado al taller #2 Física experimental.  El cual consiste en el entendimiento de la relación potencial y como desarrollarla, 
-la generación de gráficas en la relación t vs d y t vs h en escala milimétrica y escala logarítmica. 
+# Proyecto de Cálculo de Incertidumbres en Medición
 
-También el como predecir nuevos tiempos aproximados cambiando el valor de las variables dependientes d y h.
+Este repositorio contiene scripts en Python asociados al taller #2 Física experimental. 
+Este consiste en el entendimiento de la relación potencial y como desarrollarla, la generación de gráficas en la relación t vs d y t vs h en escala milimétrica y escala logarítmica..
 
-Adicionalmente se encuentra el código para la comparación de los tiempos experimentales con los tiempos resultado de la formula general planteada en el taller. 
+## Contenido del Proyecto
 
-En caso de implementarlo recuerda tener instalado python en tu computadora, e instalar las librería numpy especializada en el cálculo numérico y analisis de datos, matplotlib para la generación de las gráficas y pandas para el manejo y análisis de estructura de datos. Y entender la función scipy.optimize para ajuste de curvas y regresiones lineales.
+### Archivos Principales
 
-Pasos para su uso:
+- **`graficas.py`**:
+  - Permite ver las gráficas en la relación t vs d y y vs h en escala milimétrica y escala log - log.
 
-1. Clonar el repositorio
-2. intalar librerías: pip install numpy matplotlib pandas
-3. Cambiar datos experimentales en los códigos
-4. Ejecutar el código: (de acuerdo a la versión de python, ejemplo v3) python3 graficas.py 
+- **`exponentes_negativos.py`**
 
 
-En caso de solicitar información escriba al siguiente correo: jrodriguezvar@unal.edu.co
+- **`estimacion_tiempos.py`**:
+  - Código para predecir nuevos tiempos, cambiando el valor de las variables d y h.
+
+- **`formula_general.py`**:
+  - Calculo para comparar los tiempos experimentales con los tiempos resultantes de la formula general planteada en el taller.
+
+
+- **`Tener en cuenta`**:
+  - En caso de implementarlo recuerda tener instalado python en tu computadora, e instalar las librería numpy especializada en el cálculo numérico y analisis de datos, matplotlib para la generación de las gráficas y pandas para el manejo y análisis de estructura de datos. Además de entender la función scipy.optimize para ajuste de curvas y regresiones lineales.
+
+-**`Contacto`**:
+  - jrodriguezvar@unal.edu.co
+
+## Requisitos e instalación
+
+- **Python 3.6 o superior**.
+- **Biblioteca NumPy, matplotlib y pandas.**
+  ```bash
+  pip install numpy matplotlib pandas
+
+- **Ejecutar (ejemplo).**
+
+```bash
+  python3 formula_general.py
