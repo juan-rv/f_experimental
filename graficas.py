@@ -47,7 +47,7 @@ plt.grid(True, linestyle="--", linewidth=0.5)
 plt.show()
 
 # Graficar t vs d en escala log-log y lista en consola
-print("\nResultados y gráfica para t vs d (escala log-log):")
+print("\nResultados y gráfica para log t vs log d (escala log-log):")
 plt.figure(figsize=(8, 6))
 for i, h in enumerate(alturas):
     popt, _ = curve_fit(lambda d, k, n: k * (d ** n), diametros, tiempo[:, i])
@@ -59,7 +59,7 @@ for i, h in enumerate(alturas):
     #formato del gráfico
     plt.plot(log_diametros, log_tiempo[:, i], marker="o", label=f"h={h} mm\nn: {n:.4f}, log(k): {log_k:.4f}")
 
-plt.title("Relación t vs d (escala log-log)")
+plt.title("Relación log t vs log d (escala log-log)")
 plt.xlabel("log(Diámetro) [mm]")
 plt.ylabel("log(Tiempo) [s]")
 plt.legend()
@@ -67,7 +67,7 @@ plt.grid(True, which="both", linestyle="--", linewidth=0.5)
 plt.show()
 
 # Graficar t vs h en escala log-log y lista en consola
-print("\nResultados y gráfica para t vs h (escala log-log):")
+print("\nResultados y gráfica para log t vs log h (escala log-log):")
 plt.figure(figsize=(8, 6))
 for i, d in enumerate(diametros):
     popt, _ = curve_fit(lambda h, k, n: k * (h ** n), alturas, tiempo[i, :])
@@ -80,7 +80,7 @@ for i, d in enumerate(diametros):
     #formato del grafico
     plt.plot(log_alturas, log_tiempo[i, :], marker="o", label=f"d={d} mm\nn: {n:.4f}, log(k): {log_k:.4f}")
 
-plt.title("Relación t vs h (escala log-log)")
+plt.title("Relación log t vs log h (escala log-log)")
 plt.xlabel("log(Altura) [mm]")
 plt.ylabel("log(Tiempo) [s]")
 plt.legend()
